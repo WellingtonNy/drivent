@@ -11,6 +11,35 @@ export type ViaCEPAddress = {
   uf: string;
 };
 
+<<<<<<< HEAD
+=======
+export type ViaCEPAddressError = {
+  error: boolean;
+};
+
+export type ViaCEPAddressResponse = {
+  cep: string;
+  logradouro: string;
+  complemento: string;
+  bairro: string;
+  localidade: string;
+  uf: string;
+  ibge: string;
+  gia: string;
+  ddd: string;
+  siafi: string;
+};
+
+export type AddressEnrollment = {
+  logradouro: string;
+  complemento: string;
+  bairro: string;
+  cidade: string;
+  uf: string;
+  error?: string;
+};
+
+>>>>>>> 16c5480c3d328c63006f5f18b3b42aa9a36b220a
 export type RequestError = {
   status: number;
   data: object | null;
